@@ -5,7 +5,8 @@ import javax.persistence.*;
 @Entity
 @Table(name = "cars")
 public class Car {
-    public Car() {}
+    public Car() {
+    }
 
     public Car(String model, int series) {
         this.model = model;
@@ -58,6 +59,7 @@ public class Car {
         this.user = user;
         return user;
     }
+
     @Override
     public String toString() {
         return "Car {" +
